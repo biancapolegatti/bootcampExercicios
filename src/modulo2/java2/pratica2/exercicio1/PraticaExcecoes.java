@@ -1,4 +1,4 @@
-package modulo2.java2.pratica2;
+package modulo2.java2.pratica2.exercicio1;
 
 public class PraticaExcecoes {
 

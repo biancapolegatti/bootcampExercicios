@@ -1,4 +1,4 @@
-package modulo2.java2pratica21;
+package modulo2.java2.pratica2.exercicio2;
 
 public class NaoPereciveis extends Produto {
 
