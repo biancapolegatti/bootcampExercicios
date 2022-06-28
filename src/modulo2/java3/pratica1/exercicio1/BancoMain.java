@@ -5,12 +5,22 @@ public class BancoMain {
     public static void main(String[] args) {
 
         Executivo e1 = new Executivo();
-        Cobradores c1 = new Cobradores();
         Basico b1 = new Basico();
+        Cobrador c1 = new Cobrador();
 
-        System.out.println(e1.deposito);
-        System.out.println(e1.transferencia);
+        e1.efetuarDeposito();
+        e1.efetuarTransferencia();
 
+        System.out.println("==========================");
+
+        b1.consultarSaldo();
+        b1.pagarServicos();
+        b1.sacarDinheiro();
+
+        System.out.println("=========================");
+
+        c1.sacarDinheiro();
+        c1.consultarSaldo();
 
     }
 }

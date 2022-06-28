@@ -33,3 +33,5 @@ public class Pratica1 {
     }
 
 }
+
+//deveria ter sido feito separando os laços for, pois na forma como está, ele roda percorre desnecessariamente

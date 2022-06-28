@@ -1,8 +1,9 @@
 package modulo2.java2.pratica2.exercicio2;
 
 public class Produto {
+
     public String nome;
-    double preco;
+    public double preco;
 
     public Produto(String nome, double preco) {
         this.nome = nome;
@@ -37,6 +38,4 @@ public class Produto {
         return preco * quantidadeDeProdutos;
 
     }
-
-
 }

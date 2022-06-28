@@ -12,6 +12,5 @@ public class PessoaMain {
         System.out.println("Maioridade: " + p3.ehMaiorIdade());
         System.out.println("Todos os dados " + p3.toString());
 
-
     }
 }

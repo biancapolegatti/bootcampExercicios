@@ -2,12 +2,12 @@ package modulo2.java2.pratica1;
 
 public class Pessoa {
 
-    public String nome;
-    public int idade;
-    public String id;
-    public String sexo;
-    public double altura;
-    public double peso;
+    private String nome;
+    private int idade;
+    private String id;
+    private String sexo;
+    private double altura;
+    private double peso;
 
     public Pessoa() {
 

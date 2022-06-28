@@ -2,17 +2,13 @@ package modulo2.java3.pratica1.exercicio1;
 
 public class Deposito implements Transacao {
 
-    public String fazerDeposito() {
-        return "Fazendo o depósito";
+    @Override
+    public void transacaoOk() {
+        System.out.println("Depósito ok");
     }
 
     @Override
-    public String transacaoOk() {
-        return "Transação ok";
-    }
-
-    @Override
-    public String transacaoNaoOk() {
-        return "Transação ok";
+    public void transacaoNaoOk() {
+        System.out.println("Depósito não ok");
     }
 }

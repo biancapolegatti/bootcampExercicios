@@ -18,9 +18,4 @@ public class PraticaExcecoes {
         return resultado;
     }
 
-    public static void main(String[] args) {
-
-        PraticaExcecoes excecao = new PraticaExcecoes();
-        excecao.calcularRazao();
-    }
 }
