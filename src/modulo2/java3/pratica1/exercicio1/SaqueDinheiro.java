@@ -1,14 +1,7 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class SaqueDinheiro implements Transacao {
+public interface SaqueDinheiro {
 
-    @Override
-    public void transacaoOk() {
-        System.out.println("Saque em dinheiro ok");
-    }
+     public void sacarDinheiro();
 
-    @Override
-    public void transacaoNaoOk() {
-        System.out.println("Saque em dinheiro não ok");
-    }
 }

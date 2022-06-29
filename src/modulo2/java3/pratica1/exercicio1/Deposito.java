@@ -1,14 +1,7 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class Deposito implements Transacao {
+public interface Deposito extends Transacao {
 
-    @Override
-    public void transacaoOk() {
-        System.out.println("Depósito ok");
-    }
+    public void fazerDeposito();
 
-    @Override
-    public void transacaoNaoOk() {
-        System.out.println("Depósito não ok");
-    }
 }

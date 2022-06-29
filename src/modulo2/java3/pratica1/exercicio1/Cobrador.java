@@ -1,21 +1,29 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class Cobrador {
+public class Cobrador implements ConsultaSaldo, SaqueDinheiro {
 
-    ConsultaSaldo consultaSaldo;
-    SaqueDinheiro saqueDinheiro;
-
-    public Cobrador() {
-        this.consultaSaldo = new ConsultaSaldo();
-        this.saqueDinheiro = new SaqueDinheiro();
-    }
-
-    public void sacarDinheiro() {
-        saqueDinheiro.transacaoOk();
-    }
-
+    @Override
     public void consultarSaldo() {
-        consultaSaldo.transacaoOk();
+        System.out.println("Consultando o saldo");
+    }
+
+
+    @Override
+    public void sacarDinheiro() {
+        System.out.println("Sacando o dinheiro");
+    }
+
+
+    @Override
+    public void transacaoOk() {
+        System.out.println("Transação ok");
+
+    }
+
+    @Override
+    public void transacaoNaoOk() {
+        System.out.println("Transação não ok");
+
     }
 
 }

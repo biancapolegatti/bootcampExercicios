@@ -1,27 +1,31 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class Basico {
+public class Basico implements ConsultaSaldo, PagamentoServicos, SaqueDinheiro {
 
-    ConsultaSaldo consultaSaldo;
-    PagamentoServicos pagamentoServicos;
-    SaqueDinheiro saqueDinheiro;
-
-    public Basico() {
-        this.consultaSaldo = new ConsultaSaldo();
-        this.pagamentoServicos = new PagamentoServicos();
-        this.saqueDinheiro = new SaqueDinheiro();
+    @Override
+    public void consultarSaldo() {
+        System.out.println("Consultando o saldo");
     }
 
-    public void consultarSaldo(){
-        consultaSaldo.transacaoOk();
+    @Override
+    public void pagarServicos() {
+        System.out.println("Fazendo o pagamento dos serviços");
     }
 
-    public void pagarServicos(){
-        pagamentoServicos.transacaoOk();
+    @Override
+    public void sacarDinheiro() {
+        System.out.println("Sacando o dinheiro");
     }
 
-    public void sacarDinheiro(){
-        saqueDinheiro.transacaoOk();
+    @Override
+    public void transacaoOk() {
+        System.out.println("Transação ok");
+
     }
 
+    @Override
+    public void transacaoNaoOk() {
+        System.out.println("Transação não ok");
+
+    }
 }

@@ -1,14 +1,7 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class PagamentoServicos implements Transacao {
+public interface PagamentoServicos {
 
-    @Override
-    public void transacaoOk() {
-        System.out.println("Pagamento de serviços ok");
-    }
+    public void pagarServicos();
 
-    @Override
-    public void transacaoNaoOk() {
-        System.out.println("Pagamento de serviços não ok");
-    }
 }

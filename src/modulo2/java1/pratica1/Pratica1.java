@@ -16,7 +16,6 @@ public class Pratica1 {
 
         for (int i = 0; i < temperaturas.length; i++) {
             for (int j = 0; j < temperaturas[i].length; j++) {
-                int temperatura = temperaturas[i][j];
                 if (temperaturas[i][j] > maiorTemperatura) {
                     maiorTemperatura = temperaturas[i][j];
                     cidadeMaior = cidades[i];

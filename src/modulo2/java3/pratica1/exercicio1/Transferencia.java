@@ -1,14 +1,6 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class Transferencia implements Transacao {
+public interface Transferencia {
 
-    @Override
-    public void transacaoOk() {
-        System.out.println("Transferência ok");
-    }
-
-    @Override
-    public void transacaoNaoOk() {
-        System.out.println("Transferência não ok");
-    }
+    public void fazerTransferencia();
 }

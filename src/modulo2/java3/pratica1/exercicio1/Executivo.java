@@ -1,20 +1,30 @@
 package modulo2.java3.pratica1.exercicio1;
 
-public class Executivo {
+public class Executivo implements Deposito, Transferencia {
 
-    Deposito deposito;
-    Transferencia transferencia;
 
-    public Executivo() {
-        this.deposito = new Deposito();
-        this.transferencia = new Transferencia();
+    @Override
+    public void fazerDeposito() {
+        System.out.println("Fazendo o depósito");
+
     }
 
-    public void efetuarDeposito(){
-        deposito.transacaoOk();
-           }
 
-    public void efetuarTransferencia(){
-        transferencia.transacaoOk();
-        }
+    @Override
+    public void fazerTransferencia() {
+        System.out.println("Fazendo a transferência");
+
+    }
+
+    @Override
+    public void transacaoOk() {
+        System.out.println("Transação ok");
+
+    }
+
+    @Override
+    public void transacaoNaoOk() {
+        System.out.println("Transação não ok");
+
+    }
 }
