@@ -2,7 +2,8 @@ package modulo2.java3.pratica1.exercicio2;
 
 public interface Imprimir {
 
-    void imprimir();
-
+    public static void imprimirDocumento(Documento documento){
+        System.out.println(documento.toString());
+    }
 
 }

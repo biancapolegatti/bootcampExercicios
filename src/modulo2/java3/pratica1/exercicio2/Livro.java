@@ -1,13 +1,15 @@
 package modulo2.java3.pratica1.exercicio2;
 
-public class Livro implements Imprimir {
+public class Livro extends Documento {
 
     private String titulo;
     private String genero;
     private String nomeDoAutor;
     private int numeroDePaginas;
 
-    public Livro(String titulo, String genero, String nomeDoAutor, int numeroDePaginas) {
+
+    public Livro(String identificacao, String titulo, String genero, String nomeDoAutor, int numeroDePaginas) {
+        super(identificacao);
         this.titulo = titulo;
         this.genero = genero;
         this.nomeDoAutor = nomeDoAutor;
@@ -23,9 +25,4 @@ public class Livro implements Imprimir {
                 ", numeroDePaginas = " + numeroDePaginas;
     }
 
-    @Override
-    public void imprimir() {
-        System.out.println(toString());
-
-    }
 }

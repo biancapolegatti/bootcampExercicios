@@ -10,14 +10,16 @@ public class ImprimirMain {
 
         List<String> listaHabilidades = List.of("Programar em java", "Programar em JS", "Conhecimento em JB");
 
-        Curriculo c1 = new Curriculo("Isabela", "Silva", 18, "Secretaria", listaHabilidades);
-        c1.imprimir();
+        Pessoa p1 = new Pessoa("Beatriz", "Silva", 18, "Dev");
+        Curriculo c1 = new Curriculo("CV", p1, listaHabilidades);
+        Imprimir.imprimirDocumento(c1);
 
-        Livro l1 = new Livro("Harry Potter e a Pedra Filosofal", "Fantasia", "JK Rowling", 500);
-        l1.imprimir();
 
-        Relatorio r1 = new Relatorio("Caio", "João", 5, 3);
-        r1.imprimir();
+        Livro l1 = new Livro("Livro", "Harry Potter e a Pedra Filosofal", "Fantasia", "JK Rowling", 500);
+        Imprimir.imprimirDocumento(l1);
+
+        Relatorio r1 = new Relatorio("Relatório", "Caio", "João", 5, 3);
+        Imprimir.imprimirDocumento(r1);
 
 
     }

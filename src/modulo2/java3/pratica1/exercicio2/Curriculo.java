@@ -2,37 +2,24 @@ package modulo2.java3.pratica1.exercicio2;
 
 import java.util.List;
 
-public class Curriculo implements Imprimir {
+public class Curriculo extends Documento {
 
-    private String nome;
-    private String sobrenome;
-    private int idade;
-    private String funcao;
+    private Pessoa pessoa;
     private List<String> habilidades;
 
 
-    public Curriculo(String nome, String sobrenome, int idade, String funcao, List<String> habilidades) {
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.idade = idade;
-        this.funcao = funcao;
+    public Curriculo(String identificacao, Pessoa pessoa, List<String> habilidades) {
+        super(identificacao);
+        this.pessoa = pessoa;
         this.habilidades = habilidades;
     }
 
+
     @Override
     public String toString() {
-        return "Curriculo - " +
-                "nome = " + nome +
-                ", sobrenome = " + sobrenome +
-                ", idade = " + idade +
-                ", funcao = " + funcao +
-                ", habilidades = " + habilidades;
-
-    }
-
-    @Override
-    public void imprimir() {
-
-        System.out.println(toString());
+        return "Curriculo{" +
+                "pessoa=" + pessoa +
+                ", habilidades=" + habilidades +
+                '}';
     }
 }
